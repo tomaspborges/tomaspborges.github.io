@@ -242,7 +242,14 @@ main { max-width: var(--max); margin: 0 auto; padding: 52px 24px 80px; }
 .workshop-meta { font-size: .8rem; color: var(--muted); margin-bottom: 9px; }
 .workshop p { font-size: .855rem; color: var(--muted); line-height: 1.7; }
 
-/* ── AWARDS ── */
+/* ── AWARDS & DISTINCTIONS ── */
+.award-item { padding: 11px 0; border-bottom: 1px solid var(--border); }
+.award-item:last-child { border-bottom: none; }
+.award-yr { display: inline-block; font-size: .7rem; font-weight: 700; color: var(--accent); background: var(--accent-bg); padding: 1px 8px; border-radius: 4px; margin-bottom: 5px; letter-spacing: .04em; }
+.award-title { font-size: .91rem; font-weight: 600; line-height: 1.5; margin-bottom: 1px; }
+.award-org { font-size: .81rem; color: var(--muted); }
+
+/* ── AWARDS TIMELINE (awards.html) ── */
 .timeline { padding-left: 24px; position: relative; max-width: 620px; }
 .timeline::before { content: ''; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(to bottom, var(--accent), var(--accent-bg)); border-radius: 2px; }
 .tl-item { position: relative; padding-bottom: 22px; }

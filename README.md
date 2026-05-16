@@ -1,1 +1,1 @@
-# Code for personal website, updated on May 2025.
+Code for personal website, updated on May 2025.

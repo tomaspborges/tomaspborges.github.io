@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic website of Tomás Paixão Borges — PhD Candidate in Political Science at IESP-UERJ and MIT, researching distributive politics, electoral behavior, and social protection.">
+  <meta name="description" content="Tomás Paixão Borges — PhD Student in Political Science at IESP-UERJ and MIT. Research on distributive politics, electoral behavior, and social protection.">
   <title>Tomás Paixão Borges</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,14 @@
 ======================================================== -->
 <nav id="navbar">
   <div class="nav-container">
-    <a href="#about" class="nav-logo">TPB</a>
+    <a href="#" onclick="showPage('about'); return false;" class="nav-logo">Tomás Paixão Borges</a>
     <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#software">Data &amp; Software</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#awards">Awards</a>
-      <a href="http://lattes.cnpq.br/3344384689183707" target="_blank" class="nav-cv">Lattes CV</a>
+      <a href="#" onclick="showPage('about'); return false;">About</a>
+      <a href="#" onclick="showPage('research'); return false;">Research</a>
+      <a href="#" onclick="showPage('publications'); return false;">Publications</a>
+      <a href="#" onclick="showPage('software'); return false;">Data &amp; Software</a>
+      <a href="#" onclick="showPage('teaching'); return false;">Teaching</a>
+      <a href="#" onclick="showPage('awards'); return false;">Awards</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -39,7 +38,7 @@
 <!-- ========================================================
      ABOUT
 ======================================================== -->
-<section id="about">
+<section id="about" class="active">
   <div class="container">
 
     <div class="hero">
@@ -48,53 +47,33 @@
       </div>
       <div class="hero-text">
         <h1>Tomás Paixão Borges</h1>
-        <p class="hero-title">PhD Candidate · Political Science · IESP-UERJ</p>
-        <p class="hero-title">Visiting PhD Student · MIT &nbsp;·&nbsp; CAPES PDSE Fellow</p>
+        <p class="hero-title">PhD Student in Political Science · IESP-UERJ</p>
+        <p class="hero-title">Visiting Student · MIT &nbsp;·&nbsp; CAPES PDSE Fellow</p>
         <p class="hero-title">Data Scientist · Quaest</p>
         <div class="badges">
           <span class="badge">FAPERJ Nota 10</span>
           <span class="badge">CAPES PDSE</span>
         </div>
-        <div class="hero-emails">
-          <a href="mailto:tomasborges@iesp.uerj.br">
-            <i class="fas fa-envelope" style="font-size:.72rem"></i> tomasborges@iesp.uerj.br
-          </a>
-          <a href="mailto:tomaspb@mit.edu">
-            <i class="fas fa-envelope" style="font-size:.72rem"></i> tomaspb@mit.edu
-          </a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/tomaspborges" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/tomaspaixaob/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://scholar.google.com/citations?user=umYURxYAAAAJ&hl=pt-BR" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-          <a href="http://lattes.cnpq.br/3344384689183707" target="_blank" title="Lattes CV"><i class="ai ai-lattes"></i></a>
-          <a href="https://orcid.org/0000-0002-5276-6636" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
-        </div>
       </div>
-    </div><!-- /hero -->
+    </div>
 
-    <div class="about-content">
+    <div class="about-bio">
       <p>
-        I am a PhD candidate in Political Science at
-        <a href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a>,
-        currently a visiting PhD student at
-        <a href="https://mit.edu/" target="_blank">MIT</a>
-        (advisor: <a href="https://hidalgo.mit.edu/" target="_blank">Daniel F. Hidalgo</a>).
-        My advisor in Brazil is
-        <a href="https://fernandomeireles.github.io/" target="_blank">Fernando Meireles</a>.
-        I hold fellowships from <strong>FAPERJ Nota 10</strong> and <strong>CAPES PDSE</strong>.
+        PhD Student in Political Science at
+        <a href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a>
+        and Data Scientist at
+        <a href="https://quaest.com.br/" target="_blank">Quaest Pesquisa e Consultoria</a>.
+        In 2026, I am a visiting student at the
+        <a href="https://mit.edu/" target="_blank">Massachusetts Institute of Technology (MIT)</a>,
+        supervised by <a href="https://hidalgo.mit.edu/" target="_blank">Daniel F. Hidalgo</a>.
+        My advisor in Brazil is <a href="https://fernandomeireles.github.io/" target="_blank">Fernando Meireles</a>.
       </p>
       <p>
-        I am a researcher at <a href="#research">CERES</a> and coordinator of
-        <a href="#research">MAPE</a> at IESP-UERJ.
-        I hold a Bachelor's in Applied Foreign Languages for International Negotiations
-        from CEFET-RJ, with an academic exchange at Sciences Po Strasbourg (France).
-        I am also a Data Scientist at <a href="https://quaest.com.br/" target="_blank">Quaest</a>.
-      </p>
-      <p>
-        My research focuses on <strong>distributive politics</strong>, <strong>electoral behavior</strong>,
-        and <strong>social protection</strong> — with particular interest in how public goods
-        shape voting behavior and how states build and dismantle social policies.
+        Over the past few years, I have worked across international organizations, policy research,
+        and NGOs, focusing on the intersection between data science, public policy, and political behavior.
+        I hold an MA in Political Science from IESP-UERJ and a BA in Applied Foreign Languages
+        (International Business) from CEFET-RJ, including an exchange program at
+        Institut d'études politiques de Strasbourg (Sciences Po Strasbourg).
       </p>
     </div>
 
@@ -109,6 +88,27 @@
         <span>Causal Inference</span>
         <span>Political Economy</span>
       </div>
+    </div>
+
+    <div class="social-pills">
+      <a href="https://www.linkedin.com/in/tomaspaixaob/" target="_blank" class="social-pill">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://github.com/tomaspborges" target="_blank" class="social-pill">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://scholar.google.com/citations?user=umYURxYAAAAJ&hl=pt-BR" target="_blank" class="social-pill">
+        <i class="ai ai-google-scholar"></i> Google Scholar
+      </a>
+      <a href="http://lattes.cnpq.br/3344384689183707" target="_blank" class="social-pill">
+        <i class="ai ai-lattes"></i> Lattes
+      </a>
+      <a href="https://orcid.org/0000-0002-5276-6636" target="_blank" class="social-pill">
+        <i class="ai ai-orcid"></i> ORCID
+      </a>
+      <a href="mailto:tomasborges@iesp.uerj.br" class="social-pill">
+        <i class="fas fa-envelope"></i> Email
+      </a>
     </div>
 
   </div>
@@ -126,26 +126,22 @@
     <div class="cards-grid">
 
       <div class="card">
-        <span class="card-role">Coordinator</span>
+        <span class="card-role">Researcher</span>
         <h4>MAPE — Laboratório de Monitoramento e Avaliação de Políticas e Eleições</h4>
         <p class="card-inst">IESP-UERJ</p>
-        <p>
-          Why do some governments invest more in health and education than others?
-          Does re-electing incumbents make a difference in people's lives?
-          MAPE produces scientific evidence to decisively intervene in public debates
-          about the functioning of Brazilian democracy and its effect on people's lives.
-        </p>
+        <p>Why do some governments invest more in health and education than others?
+        Does re-electing incumbents make a difference in people's lives?
+        MAPE produces scientific evidence to decisively intervene in public debates
+        about the functioning of Brazilian democracy.</p>
       </div>
 
       <div class="card">
-        <span class="card-role researcher">Researcher</span>
+        <span class="card-role muted">Researcher</span>
         <h4>CERES — Centro para o Estudo da Riqueza e Estratificação Social</h4>
         <p class="card-inst">IESP-UERJ</p>
-        <p>
-          Research center focused on the systematic investigation of stratification,
-          social mobility, inequalities, wealth, poverty, and the world of work
-          in Brazil and in comparative perspective.
-        </p>
+        <p>Research center focused on the systematic investigation of stratification,
+        social mobility, inequalities, wealth, poverty, and the world of work
+        in Brazil and in comparative perspective.</p>
       </div>
 
     </div>
@@ -173,8 +169,8 @@
         <h4>Social Protection Retrenchment and Resilience</h4>
         <p class="card-inst">Social Protection · Comparative Politics</p>
         <p>A comparative study of how Payment for Environmental Services (PES) programs
-        in Brazil were dismantled during austerity periods — and how some managed to
-        survive. Presented at ICPP7 (Montréal, 2025).</p>
+        in Brazil were dismantled during austerity periods — and how some managed to survive.
+        Presented at ICPP7 (Montréal, 2025).</p>
       </div>
 
       <div class="card">
@@ -212,6 +208,9 @@
         <p class="pub-title">Habitação, saneamento e voto: como bens duráveis moldam o comportamento eleitoral</p>
         <p class="pub-authors">Borges, T.P.</p>
         <p class="pub-journal"><em>Revista de Sociologia e Política</em>, v. 33</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1590/1678-98732433e007" target="_blank" class="pub-link">DOI</a>
+        </div>
       </div>
 
       <div class="pub-item">
@@ -219,13 +218,9 @@
         <p class="pub-title">Desinformação às avessas: uma reflexão sobre o conceito de desinformação para Olavo de Carvalho</p>
         <p class="pub-authors">Alves, G.Q.; Borges, T.P.</p>
         <p class="pub-journal"><em>Revista Sociais e Humanas</em>, v. 37</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <p class="pub-title">Pensamento político e política externa na Independência: o pensamento de José Bonifácio e Frei Caneca em perspectiva comparada</p>
-        <p class="pub-authors">Sousa, E.S.T.; Alberto, F.V.B.; Borges, T.P.</p>
-        <p class="pub-journal"><em>(SYN)THESIS</em> (Rio de Janeiro), v. 15, pp. 9–24</p>
+        <div class="pub-links">
+          <a href="#" class="pub-link disabled" title="Add DOI link">DOI</a>
+        </div>
       </div>
 
       <div class="pub-item">
@@ -233,20 +228,9 @@
         <p class="pub-title">A Política Externa Brasileira nos programas partidários das eleições presidenciais de 2022</p>
         <p class="pub-authors">Alberto, F.V.B.; Rocha, M.M.; Borges, T.P.</p>
         <p class="pub-journal"><em>Boletim NEAAPE</em>, v. 6, pp. 6–17</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <p class="pub-title">Notas biográficas de Antonio Paim: de militante comunista na União Soviética a guru do liberalismo brasileiro no governo Bolsonaro</p>
-        <p class="pub-authors">Alberto, F.V.B.; Borges, T.P.</p>
-        <p class="pub-journal"><em>Diálogos Internacionais</em>, v. 10</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <p class="pub-title">Às avessas da marcha progressista: A crise brasileira na obra de Olavo de Carvalho</p>
-        <p class="pub-authors">Borges, T.P.</p>
-        <p class="pub-journal"><em>Insight Inteligência</em> (Rio de Janeiro), v. 25, pp. 140–153</p>
+        <div class="pub-links">
+          <a href="#" class="pub-link disabled" title="Add DOI link">DOI</a>
+        </div>
       </div>
 
       <div class="pub-item">
@@ -254,49 +238,20 @@
         <p class="pub-title">Uma Nova Política Externa para o Meio-Ambiente no Governo Lula? Evidências para o Ambientalismo Transversal nos 100 Primeiros Dias de Governo</p>
         <p class="pub-authors">Campbell, G.M.; Alberto, F.V.B.; Borges, T.P.</p>
         <p class="pub-journal"><em>Boletim NEAAPE</em>, v. 7, pp. 31–43</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2022</span>
-        <p class="pub-title">As Relações Brasil-Oriente Médio no Regime Militar: Uma Trajetória Tortuosa</p>
-        <p class="pub-authors">Alberto, F.V.B.; Borges, T.P.</p>
-        <p class="pub-journal"><em>Fronteira</em> (PUC-MG), v. 21, pp. 158–178</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2022</span>
-        <p class="pub-title">Estados Falidos: Descrição do Real ou Profecia Autorrealizável?</p>
-        <p class="pub-authors">Borges, T.P.; Alberto, F.V.B.</p>
-        <p class="pub-journal"><em>Revista de Iniciação Científica em Relações Internacionais</em>, v. 9, pp. 129–148</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2019</span>
-        <p class="pub-title">Políticas e planificações linguísticas indígenas: uma análise de caso sobre o Quéchua</p>
-        <p class="pub-authors">Borges, T.P.</p>
-        <p class="pub-journal"><em>CALEA — Cadernos de Aula do LEA</em>, v. 1, pp. 18–34</p>
+        <div class="pub-links">
+          <a href="#" class="pub-link disabled" title="Add DOI link">DOI</a>
+        </div>
       </div>
 
     </div><!-- /articles -->
 
     <!-- ---- Book Chapters ---- -->
     <div id="chapters" class="tab-content">
-
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <p class="pub-title">Políticas e Planificações Linguísticas Indígenas: Uma Análise sobre o Quéchua no Peru em Perspectiva ao Caso Brasileiro</p>
-        <p class="pub-authors">Borges, T.P.; Alberto, F.V.B.</p>
-        <p class="pub-journal">In: Bianchessi, C. (ed.). <em>Diálogos Sobre o Ensino e a Educação: Diferentes Olhares e Contextos</em>. Editora Bagai, pp. 125–142</p>
-      </div>
-
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <p class="pub-title">As Relações Brasil-Oriente Médio no Regime Militar: Uma Trajetória Tortuosa</p>
-        <p class="pub-authors">Alberto, F.V.B.; Borges, T.P.</p>
-        <p class="pub-journal">In: Bianchessi, C. (ed.). <em>Olhares sobre as Ciências Humanas e suas Tecnologias: Experiências, Aprendizagens, Narrativas</em>. Editora Bagai, pp. 34–56</p>
-      </div>
-
-    </div><!-- /chapters -->
+      <p style="font-size:0.92rem; color:var(--text-muted); padding: 20px 0;">
+        Book chapters from this phase of research are available upon request.
+        More recent work appears in the Working Papers section.
+      </p>
+    </div>
 
     <!-- ---- Working Papers ---- -->
     <div id="working" class="tab-content">
@@ -304,7 +259,7 @@
       <div class="wp-card">
         <p class="wp-status">Working Paper · 2025</p>
         <p class="wp-title">Quantos votos meu partido vai fazer? Prevendo o vote share nos municípios brasileiros</p>
-        <p class="wp-authors">Borges, T.P.; Paixão, T. (IESP-UERJ)</p>
+        <p class="wp-authors">Lamarca, F.; Borges, T.P.</p>
         <div class="pub-links">
           <span class="pub-link disabled">Abstract coming soon</span>
           <span class="pub-link disabled">Replication materials coming soon</span>
@@ -314,7 +269,7 @@
       <div class="wp-card">
         <p class="wp-status">Working Paper · 2025</p>
         <p class="wp-title">Interpolation of Electoral Data into Census Tract: A Novel Method Based on the Brazilian Case</p>
-        <p class="wp-authors">Barbosa, R.J.; Schaefer, B.M.; Borges, T.P.</p>
+        <p class="wp-authors">Barbosa, R.J.; Gelape, L.; Schaefer, B.M.; Borges, T.P.</p>
       </div>
 
       <div class="wp-card">
@@ -345,6 +300,9 @@
         <p class="pub-title">A proibição do uso de celulares em escolas melhora o desempenho dos estudantes?</p>
         <p class="pub-authors">Schaefer, B.M.; Borges, T.P.; Gomes Filho, F.A.A.</p>
         <p class="pub-journal"><em>Nexo Políticas Públicas</em>, 26 nov. 2025</p>
+        <div class="pub-links">
+          <a href="#" class="pub-link disabled" title="Add link">Link</a>
+        </div>
       </div>
 
     </div><!-- /policy -->
@@ -362,24 +320,24 @@
     <div class="cards-grid">
 
       <div class="card">
-        <span class="card-role badge-soft">Database</span>
+        <span class="card-role soft">Database</span>
         <h4>mape_municipios</h4>
         <p class="sw-authors">Schaefer, B.M.; Meireles, F.; Freitas, C.B.B.M.; Borges, T.P. et al. · 2025</p>
-        <p>Comprehensive municipal-level database developed at MAPE/IESP-UERJ for monitoring and evaluating public policies and elections across all Brazilian municipalities.</p>
+        <p>Comprehensive municipal-level database developed at MAPE/IESP-UERJ for monitoring and evaluating public policies and elections across Brazilian municipalities.</p>
         <div class="pub-links" style="margin-top:14px">
-          <span class="pub-link disabled">Link coming soon</span>
+          <a href="https://mape.org.br/dados/" target="_blank" class="pub-link">Access Data</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="card-role badge-soft">Database</span>
+        <span class="card-role soft">Database</span>
         <h4>Escolas em Território de Grupos Armados</h4>
         <p class="sw-authors">Barbosa, R.J.; Missé Filho, M.; Borges, T.P.; Calzavara, L.; Hirata, D.; Couto, M.I.M. · 2025</p>
         <p>Dataset mapping schools in territories controlled by armed groups in the Rio de Janeiro metropolitan area. Funded by UNICEF and Open Society Foundations.</p>
       </div>
 
       <div class="card">
-        <span class="card-role badge-soft">Dashboard</span>
+        <span class="card-role soft">Dashboard</span>
         <h4>Indicadores LGBTQIA+ no Rio de Janeiro</h4>
         <p class="sw-authors">Borges, T.P.; Lamarca, F. · MAPE/IESP-UERJ</p>
         <p>Interactive dashboard aggregating indicators on the LGBTQIA+ population in Rio de Janeiro, built with Streamlit.</p>
@@ -389,7 +347,7 @@
       </div>
 
       <div class="card">
-        <span class="card-role badge-soft">Methodology</span>
+        <span class="card-role soft">Methodology</span>
         <h4>Reference Values 2.0</h4>
         <p class="sw-authors">Barbosa, R.J.; Borges, T.P.; Barcelos, N.S. · 2025</p>
         <p>Econometric methods for estimating living wages across the globe. Developed in partnership with the International Labour Organization (ILO).</p>
@@ -436,7 +394,7 @@
         </div>
       </div>
 
-    </div><!-- /courses -->
+    </div>
 
     <div class="teaching-block">
       <h3 class="block-title">Workshops &amp; Short Courses</h3>
@@ -444,28 +402,22 @@
       <div class="workshop-card">
         <h4>Escrita Acadêmica e Publicação de Papers Quantitativos em Ciências Sociais</h4>
         <p class="workshop-meta">With Rogério Barbosa et al. &nbsp;·&nbsp; IESP-UERJ &nbsp;·&nbsp; 2024 &amp; 2025</p>
-        <p>
-          Workshop aimed at equipping social science researchers to plan, write, and publish
-          competitive quantitative papers in Brazil and internationally. Topics include:
-          paper anatomy; writing clear abstracts and introductions with a research question,
-          gap, and contribution; translating findings into arguments with transparent communication
-          of effects and uncertainty; robustness and sensitivity tests; navigating the editorial
-          system; identifying suitable journals; and strategies for international insertion.
-          Teaching materials are available in an open repository for broad reuse.
-        </p>
+        <p>Workshop aimed at equipping social science researchers to plan, write, and publish
+        competitive quantitative papers in Brazil and internationally. Topics include:
+        paper anatomy; writing clear abstracts and introductions; translating findings into arguments
+        with transparent communication of effects and uncertainty; robustness tests; navigating
+        the editorial system; and strategies for international insertion.
+        Teaching materials are available in an open repository for broad reuse.</p>
       </div>
 
       <div class="workshop-card">
         <h4>Introdução à Análise Bibliométrica com Web of Science e VOSviewer</h4>
-        <p class="workshop-meta">With Carlos Barreto Freitas &nbsp;·&nbsp; IESP-UERJ &nbsp;·&nbsp; 2024 &amp; 2025 &nbsp;·&nbsp; Extension course</p>
-        <p>
-          Short course introducing researchers to bibliometric analysis and systematic literature mapping.
-          Covers database searches in Web of Science, citation analysis, and network visualization with VOSviewer.
-        </p>
+        <p class="workshop-meta">With Carlos Barreto Freitas &nbsp;·&nbsp; IESP-UERJ &nbsp;·&nbsp; 2024 &amp; 2025</p>
+        <p>Short course introducing researchers to bibliometric analysis and systematic literature mapping.
+        Covers database searches in Web of Science, citation analysis, and network visualization with VOSviewer.</p>
       </div>
 
-    </div><!-- /workshops -->
-
+    </div>
   </div>
 </section>
 
@@ -541,7 +493,7 @@
         <p class="timeline-org">CNPq</p>
       </div>
 
-    </div><!-- /timeline -->
+    </div>
   </div>
 </section>
 
@@ -552,7 +504,7 @@
 <footer>
   <div class="container">
     <p class="footer-name">Tomás Paixão Borges</p>
-    <p class="footer-tagline">PhD Candidate · IESP-UERJ / MIT</p>
+    <p class="footer-tagline">PhD Student · IESP-UERJ / MIT</p>
     <div class="footer-social">
       <a href="https://github.com/tomaspborges" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/tomaspaixaob/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -570,13 +522,24 @@
 
 
 <script>
-  // Mobile nav toggle
+  // ---- Page switching ----
+  function showPage(pageId) {
+    document.querySelectorAll('section[id]').forEach(s => s.classList.remove('active'));
+    const target = document.getElementById(pageId);
+    if (target) { target.classList.add('active'); }
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const navMatch = document.querySelector(`.nav-links a[onclick*="'${pageId}'"]`);
+    if (navMatch) navMatch.classList.add('active');
+    window.scrollTo({ top: 0 });
+    navLinks.classList.remove('open');
+  }
+
+  // ---- Mobile nav toggle ----
   const toggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
   toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-  // Publication tabs
+  // ---- Publication tabs ----
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -586,19 +549,14 @@
     });
   });
 
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navItems.forEach(a => a.classList.remove('active'));
-        const match = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-        if (match) match.classList.add('active');
-      }
-    });
-  }, { threshold: 0.25 });
-  sections.forEach(s => observer.observe(s));
+  // ---- Set initial active nav ----
+  const firstNav = document.querySelector(".nav-links a[onclick*=\"'about'\"]");
+  if (firstNav) firstNav.classList.add('active');
+
+  // ---- Hash routing on load ----
+  const validPages = ['about', 'research', 'publications', 'software', 'teaching', 'awards'];
+  const hash = window.location.hash.replace('#', '');
+  if (hash && validPages.includes(hash)) showPage(hash);
 </script>
 
 </body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tomás Paixão Borges — Datasets, dashboards, and software.">
+  <title>Tomás Paixão Borges · Data &amp; Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Tomás Paixão Borges</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="software.html" class="active">Data &amp; Software</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="awards.html">Awards</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<main>
+
+  <h2 class="page-title">Data &amp; Software</h2>
+  <div class="sw-grid">
+
+    <div class="sw-card">
+      <span class="sw-type">Database</span>
+      <h3>mape_municipios</h3>
+      <p class="sw-auth">Schaefer, B.M.; Meireles, F.; Freitas, C.B.B.M.; Borges, T.P. et al. · 2025</p>
+      <p>Municipal-level database for monitoring and evaluating public policies and elections across Brazilian municipalities.</p>
+      <div class="pub-links">
+        <a href="https://mape.org.br/dados/" target="_blank" class="pub-link">Access Data</a>
+      </div>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-type">Database</span>
+      <h3>Escolas em Território de Grupos Armados</h3>
+      <p class="sw-auth">Barbosa, R.J.; Missé Filho, M.; Borges, T.P.; Calzavara, L.; Hirata, D.; Couto, M.I.M. · 2025</p>
+      <p>Dataset mapping schools in territories controlled by armed groups in the Rio de Janeiro metropolitan area. Funded by UNICEF and Open Society Foundations.</p>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-type">Dashboard</span>
+      <h3>Indicadores LGBTQIA+ no Rio de Janeiro</h3>
+      <p class="sw-auth">Borges, T.P.; Lamarca, F. · MAPE/IESP-UERJ</p>
+      <p>Interactive dashboard aggregating indicators on the LGBTQIA+ population in Rio de Janeiro.</p>
+      <div class="pub-links">
+        <a href="https://mapemunicipios-dh.streamlit.app/" target="_blank" class="pub-link">Open Dashboard</a>
+      </div>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-type">Methodology</span>
+      <h3>Reference Values 2.0</h3>
+      <p class="sw-auth">Barbosa, R.J.; Borges, T.P.; Barcelos, N.S. · 2025</p>
+      <p>Econometric methods for estimating living wages across the globe, developed in partnership with the ILO.</p>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div>
+    <p class="ft-name">Tomás Paixão Borges</p>
+    <p class="ft-sub">IESP-UERJ · MIT</p>
+    <div class="ft-social">
+      <a href="https://github.com/tomaspborges" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tomaspaixaob/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://scholar.google.com/citations?user=umYURxYAAAAJ&hl=pt-BR" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="http://lattes.cnpq.br/3344384689183707" target="_blank" title="Lattes"><i class="ai ai-lattes"></i></a>
+      <a href="https://orcid.org/0000-0002-5276-6636" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
+    </div>
+    <div class="ft-emails">
+      <a href="mailto:tomasborges@iesp.uerj.br">tomasborges@iesp.uerj.br</a>
+      <a href="mailto:tomaspb@mit.edu">tomaspb@mit.edu</a>
+    </div>
+    <p class="ft-copy">© 2026 Tomás Paixão Borges · Built with GitHub Pages</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('burger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

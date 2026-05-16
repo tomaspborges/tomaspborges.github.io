@@ -33,22 +33,22 @@ nav {
 }
 .nav-name {
   font-family: var(--serif); font-size: .95rem; font-weight: 700;
-  color: var(--accent); cursor: pointer; white-space: nowrap;
+  color: var(--accent); white-space: nowrap; text-decoration: none;
 }
+.nav-name:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 2px; align-items: center; }
-.nav-links button {
-  background: none; border: none; cursor: pointer;
+.nav-links a {
+  display: inline-block;
   font-family: var(--sans); font-size: .82rem; font-weight: 500;
   color: var(--muted); padding: 5px 11px; border-radius: 6px;
-  transition: color .15s, background .15s;
+  transition: color .15s, background .15s; text-decoration: none;
 }
-.nav-links button:hover { color: var(--accent); background: var(--accent-bg); }
-.nav-links button.active { color: var(--accent); font-weight: 600; background: var(--accent-bg); }
+.nav-links a:hover { color: var(--accent); background: var(--accent-bg); text-decoration: none; }
+.nav-links a.active { color: var(--accent); font-weight: 600; background: var(--accent-bg); }
 .nav-burger { display: none; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text); padding: 4px; }
 
-/* PAGE SYSTEM — only .active page is visible */
-.page { display: none; max-width: var(--max); margin: 0 auto; padding: 56px 24px 80px; }
-.page.active { display: block; }
+/* MAIN CONTENT */
+main { max-width: var(--max); margin: 0 auto; padding: 56px 24px 80px; }
 
 /* ── ABOUT ── */
 .about-hero { display: flex; gap: 36px; align-items: center; margin-bottom: 40px; }
@@ -215,5 +215,5 @@ footer { background: #111827; color: #9ca3af; padding: 40px 24px 32px; text-alig
   .nav-links { display: none; position: absolute; top: var(--nav-h); left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); flex-direction: column; padding: 10px 16px; gap: 2px; box-shadow: 0 6px 20px rgba(0,0,0,.08); }
   .nav-links.open { display: flex; }
   .nav-burger { display: block; }
-  .page { padding: 40px 16px 60px; }
+  main { padding: 40px 16px 60px; }
 }

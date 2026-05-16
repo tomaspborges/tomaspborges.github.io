@@ -152,11 +152,18 @@ main { max-width: var(--max); margin: 0 auto; padding: 56px 24px 80px; }
 .wp-authors { font-size: .83rem; color: var(--muted); margin-bottom: 8px; }
 
 /* ── WORK EXPERIENCE ── */
-.job { padding: 14px 0; border-bottom: 1px solid var(--border); }
-.job:last-child { border-bottom: none; }
-.job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
-.job-title { font-size: .94rem; font-weight: 600; }
-.job-org { font-size: .84rem; color: var(--accent); font-weight: 500; }
+.job-group {
+  padding: 14px 18px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--white); margin-bottom: 12px;
+}
+.job-group-name {
+  font-size: .82rem; font-weight: 600; color: var(--accent);
+  margin-bottom: 9px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.job-sub { padding: 7px 0; border-bottom: 1px solid var(--border); }
+.job-sub:last-of-type { border-bottom: none; padding-bottom: 0; }
+.job-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.job-title { font-size: .93rem; font-weight: 600; }
 .job-dates { font-size: .79rem; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
 .job-desc { font-size: .83rem; color: var(--muted); margin-top: 3px; line-height: 1.6; }
 
